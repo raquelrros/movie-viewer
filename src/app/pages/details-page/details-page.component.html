@@ -1,0 +1,9 @@
+<main *ngIf="movieDetails$ | async as movieDetails; else error">
+  <app-movie-details
+    [title]="movieDetails.title"
+    [language]="movieDetails.original_language"
+    [releaseDate]="movieDetails.release_date"
+    [description]="movieDetails.overview"
+  ></app-movie-details>
+</main>
+<ng-template #error>Pelicula no encontrada</ng-template>

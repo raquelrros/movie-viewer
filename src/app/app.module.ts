@@ -8,6 +8,8 @@ import { SearchBoxComponent } from './pages/list-page/components/search-box/sear
 import { MovieListComponent } from './pages/list-page/components/movie-list/movie-list.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { DetailsPageComponent } from './pages/details-page/details-page.component';
+import { MovieDetailsComponent } from './pages/details-page/components/movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     ListPageComponent,
     SearchBoxComponent,
     MovieListComponent,
+    DetailsPageComponent,
+    MovieDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

@@ -1,0 +1,6 @@
+{
+  "conventionalCommits.scopes": [
+    "details-list",
+    "details-page"
+  ]
+}
