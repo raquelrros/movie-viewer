@@ -1,5 +1,6 @@
-<ul>
-  <li *ngFor="let movie of movies">
-    {{movie.title}} ({{movie.release_date}})
+<ul *ngIf="movies$; else noMatch">
+  <li *ngFor="let movie of movies$ | async">
+    {{ movie.title }} ({{ movie.release_date }})
   </li>
 </ul>
+<ng-template #noMatch> <div>No movie found.</div> </ng-template>

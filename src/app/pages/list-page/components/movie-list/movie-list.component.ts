@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Movie } from 'src/app/interfaces/movie';
 import { MovieService } from 'src/app/services/movie.service';
 
@@ -7,16 +8,17 @@ import { MovieService } from 'src/app/services/movie.service';
   templateUrl: './movie-list.component.html',
   styleUrls: ['./movie-list.component.scss'],
 })
-export class MovieListComponent implements OnInit {
-  movies: Movie[] = [];
+export class MovieListComponent implements OnChanges {
+  movies$: Observable<Movie[]> | null = null;
+  @Input() userInput: string = '';
 
   constructor(private movieService: MovieService) {}
 
-  ngOnInit(): void {
-    this.getMovies();
+  ngOnChanges(): void {
+    this.getMovies(this.userInput);
   }
 
-  getMovies(): void {
-    this.movies = this.movieService.getMovies();
+  getMovies(term: string): void {
+    this.movies$ = term === "" ? null : this.movieService.getMovies(term);
   }
 }
