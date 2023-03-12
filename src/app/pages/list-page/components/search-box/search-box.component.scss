@@ -1,0 +1,20 @@
+div {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 0.3rem;
+  }
+
+  input {
+    width: 75%;
+    height: 2.25rem;
+
+    &::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+  }
+}
