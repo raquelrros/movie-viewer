@@ -10,6 +10,7 @@ import { MovieListComponent } from './pages/list-page/components/movie-list/movi
 import { HttpClientModule } from '@angular/common/http';
 import { DetailsPageComponent } from './pages/details-page/details-page.component';
 import { MovieDetailsComponent } from './pages/details-page/components/movie-details/movie-details.component';
+import { MovieCardComponent } from './pages/list-page/components/movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MovieDetailsComponent } from './pages/details-page/components/movie-det
     MovieListComponent,
     DetailsPageComponent,
     MovieDetailsComponent,
+    MovieCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
