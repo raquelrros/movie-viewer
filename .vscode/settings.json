@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
     "details-list",
-    "details-page"
+    "details-page",
+    "list-page"
   ]
 }
