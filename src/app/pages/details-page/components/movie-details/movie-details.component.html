@@ -1,6 +1,8 @@
-<div>
-    <h1>{{ title }}</h1>
-    <p>{{ releaseDate }}</p>
-    <p>{{ language }}</p>
-    <p>{{ description ?? 'No description provided' }}</p>
+<div class="outer">
+  <h1>{{ title }}</h1>
+  <div class="details">
+    <p>Release date: {{ releaseDate }}</p>
+    <p>Original language: {{ language }}</p>
+  </div>
+  <p class="overview">{{ description ?? "No description provided" }}</p>
 </div>

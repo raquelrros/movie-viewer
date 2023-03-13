@@ -15,58 +15,15 @@
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: "Lemon Milk";
-//   src: url("./assets/fonts/LEMONMILK-BoldItalic.otf") format("otf");
-//   font-weight: bold;
-//   font-style: italic;
-// }
-
-@font-face {
-  font-family: "Lemon Milk";
-  src: url(assets/fonts/LEMONMILK-Light.otf) format("opentype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-// @font-face {
-//   font-family: "Lemon Milk";
-//   src: url("./assets/fonts/LEMONMILK-LightItalic.otf") format("otf");
-//   font-weight: 300;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "Lemon Milk";
-//   src: url("./assets/fonts/LEMONMILK-Medium.otf") format("otf");
-//   font-weight: 500;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Lemon Milk";
-//   src: url("./assets/fonts/LEMONMILK-MediumItalic.otf") format("otf");
-//   font-weight: 500;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "Lemon Milk";
-//   src: url("./assets/fonts/LEMONMILK-Regular.otf") format("otf");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Lemon Milk";
-//   src: url("./assets/fonts/LEMONMILK-RegularItalic.otf") format("otf");
-//   font-weight: normal;
-//   font-style: italic;
-// }
-
 *,
 *::after,
 *::before {
   margin: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
 }
